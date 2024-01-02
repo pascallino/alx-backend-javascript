@@ -1,9 +1,7 @@
 export default function iterateThroughObject(reportWithIterator) {
-  let result = '';
+  const result = [];
   for (const item of reportWithIterator) {
-    result += item;
-    result += ' |';
+    result.push(item);
   }
-  result = result.slice(0, -1);
-  return result;
+  return result.join(' | ');
 }
